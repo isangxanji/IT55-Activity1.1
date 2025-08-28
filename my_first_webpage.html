@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,13 +9,46 @@
     <meta name="author" content="Jezamee Murillo">
 
     <style>
-        body{font-family: sans-serif,Arial, Helvetica; background-color:azure;}
-        h1 {color:black;}
-        p {line-height: 1.5; }
-        .highlight{background-color:aqua}
-        table{border-collapse:collapse}
-            th:nth-child(4), td:nth-child(4) {text-align: center;}
-            th:last-child, td:last-child {text-align: center;}
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            background-color:azure;}
+            
+        h1 {
+            color:black; 
+            font-family:'Courier New', Courier, monospace}
+        p {
+            line-height: 1.5; }
+        .highlight{
+            background-color:aqua}
+        table{
+            border-collapse:collapse;
+            cursor:pointer}
+            th:nth-child(4), td:nth-child(4) {
+                text-align: center;}
+            th:last-child, td:last-child {
+                text-align: center;}
+            th{
+                background-color:rgb(158, 209, 268)}
+
+        form {
+            background-color: #ffffff; 
+            padding:20px; 
+            border:1px solid#000;
+            border-radius: 5px;
+            text-align: center;
+            width:fit-content;
+            margin-bottom: 5px;}
+
+        input[type="submit"] {
+            background-color: rgb(158, 209, 268);
+            color: white;
+            padding: 10px;
+            cursor: pointer;}            
+            
+        input[type="submit"]:hover {
+            background-color: #2980b9;}
+
+
     </style>
     <script>
         function greet(){
@@ -26,12 +60,15 @@
 <body onload="greet()">
     <h1> Welcome to My First Webpage </h1>
     <p class="highlight"> This is <b> Jezamee Murillo, </b> also known as <i> isangxanji. </i> </p>
+    
+     
     <h2> My Favorite Fruits </h2>
     <ul> 
         <li> Pomelo </li>
         <li> Orange </li>
         <li> Lanzones </li>
     </ul>
+    
     <!--Those are my top 3 favorite fruits.-->
     
     <h2> Steps to Make Tea </h2>
@@ -49,7 +86,7 @@
         <source src="song.mp3" type="audio/mpeg">
     </audio>
 
-    <p> Click <a href="https://www.example.com" target="_blank"> Here </a> to visit <b> My Playlist. </b></p>
+    <p> Visit <a href="https://www.example.com" target="_blank"> <b>My Playlist</b>.</a> </p>
 
     <h2> My Favorite Poem </h2>
     <video width="350" height="250" controls>
@@ -58,48 +95,26 @@
 
     <p> Click <a href="https://www.example.com"> Here </a> for more.</p>
 
-    <h2> My Profile Picture </h2>
-    <img src="image.jfif" alt=" Profile Picture " width="300">
+    <h2> My Bias Picture </h2>
+        <img src="rose.jpg" alt=" Profile Picture " width="211">
 
     <p> Visit <a href="https://www.facebook.com/isangxanji/"</a> My Facebook Page.</a></p>
 
-    <div style="border:1px solid#000; padding:10px; margin-top:10px;">
-        <p> This is a block container using <span style="color:red;"> div </span> and <span style="font-weight:bold;"> span </span> elements.</p>
+   
+    <div style="border:1px solid#000; padding:2px; margin-top:5px;">
+        <p> What you're  <span style="color:red;"> not changing, </span> you're <span style="font-weight:bold;"> choosing</span>.</p>
     </div>
 
     <h2> Class Schedule </h2>
-    <table border="1" cellpadding="5">
+    <table border="1" cellpadding="15">
+
         <tr>
-            <th> Day </th>
+            <th > Day </th>
             <th> Subject </th>
             <th> Time </th>
             <th> Code </th>
             <th> Instructor </th>
             <th> Room </th>
-        </tr>
-        <tr>
-            <td> Monday </td>
-            <td> Web System and Technologies </td>
-            <td> 10:00 - 11:00 </td>
-            <td> IT55 </td>
-            <td> Buntod, Rinante M. </td>
-            <td> 2 </td>
-        </tr>
-        <tr>
-            <td> Monday        </td>
-            <td> Environmental Science </td>
-            <td> 12:00 - 1:00 </td>
-            <td> GEE 11 </td>
-            <td> TBA </td>
-            <td> 2 </td>
-        </tr>
-        <tr>
-            <td> Monday </td>
-            <td> Computer Programming 3</td>
-            <td> 1:00 - 4:00</td>
-            <td> ITCC45 </td>
-            <td> Bautista, Charles Hanz V.</td>
-            <td> Lab 21 </td>
         </tr>
         <tr>
             <td> Monday </td>
@@ -111,43 +126,11 @@
         </tr>
         <tr>
             <td> Tuesday </td>
-            <td> Science, Technology and Society </td>
-            <td> 7:00 - 8:30</td>
-            <td> GEC 17 </td>
-            <td> Sariana, Lalaine G.</td>
-            <td> Training Room </td>
-        </tr>
-        <tr>
-            <td> Tuesday </td>
-            <td> Fundamentals of Networking </td>
-            <td> 9:00 - 10:00</td>
-            <td> IT53 </td>
-            <td> Tajones, John D.</td>
-            <td> 2 </td>
-        </tr>
-        <tr>
-            <td> Tuesday </td>
             <td> Computer Programming 3</td>
             <td> 10:00 - 12:20</td>
             <td> ITCC45 </td>
-            <td> Bautista, Charles Hanz V.</td>
+            <td> Bautista, Charles Hanz</td>
             <td> Lab 24 </td>
-        </tr>
-        <tr>
-            <td> Tuesday </td>
-            <td> Computer Architecture </td>
-            <td> 4:00 - 6:00</td>
-            <td> IT51 </td>
-            <td> Cagalitan, Lorie M.</td>
-            <td> Lab 24 </td>
-        </tr>
-        <tr>
-            <td> Wednesday </td>
-            <td> PE</td>
-            <td> 7:00 - 9:00</td>
-            <td> PE33 </td>
-            <td> TBA </td>
-            <td> SH </td>
         </tr>
         <tr>
             <td> Wednesday </td>
@@ -155,46 +138,6 @@
             <td> 10:00 - 11:00</td>
             <td> IT55 </td>
             <td> Buntod, Rinante M.</td>
-            <td> 2 </td>
-        </tr>
-        <tr>
-            <td> Wednesday </td>
-            <td> Environmental Science </td>
-            <td> 12:00 - 1:00</td>
-            <td> GEE 11 </td>
-            <td> TBA</td>
-            <td> 2 </td>
-        </tr>
-        <tr>
-            <td> Wednesday </td>
-            <td> Fundamentals of Networking </td>
-            <td> 1:00 - 4:00</td>
-            <td> IT53 </td>
-            <td> Tajones, John D.</td>
-            <td> Lab 11 </td>
-        </tr>
-        <tr>
-            <td> Wednesday </td>
-            <td> Computer Architecture </td>
-            <td> 4:00 - 7:00</td>
-            <td> IT51 </td>
-            <td> Cagalitan, Lorie M.</td>
-            <td> Lab 22 </td>
-        </tr>
-        <tr>
-            <td> Thursday </td>
-            <td> Science, Technology and Society </td>
-            <td> 7:00 - 8:30</td>
-            <td> GEC 17 </td>
-            <td> Sariana, Lalaine G.</td>
-            <td> Training Room </td>
-        </tr>
-        <tr>
-            <td> Thursday </td>
-            <td> Fundamentals of Networking </td>
-            <td> 9:00 - 10:00</td>
-            <td> IT53 </td>
-            <td> Tajones, John D.</td>
             <td> 2 </td>
         </tr>
         <tr>
@@ -213,19 +156,13 @@
             <td> TBA </td>
             <td> Lab 23 </td>
         </tr>
-        <tr>
-            <td> Friday </td>
-            <td> Environmental Science </td>
-            <td> 12:00 - 1:00</td>
-            <td> GEE 11 </td>
-            <td> TBA</td>
-            <td> 2 </td>
-        </tr>
+       
     </table>
     <!--My Schedule Every Week.-->
 
     <h2> Contact Me </h2>
     <form>
+
         <label for="name"> Name: </label>
         <input type="text" id="name" name="name"><br>
 
